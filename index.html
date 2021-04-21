@@ -11,6 +11,7 @@
 </head>
 <body>
     <div class="page-container" id="page-container">
+
         <nav class="navbar">
         <div class="nav-left">
                 <a href="#">About</a>
@@ -23,7 +24,27 @@
                     <a href="#" class="sign-in">Sign In</a>
 
             </div>
+            <!-- Popup Menu -->
         </nav>
+        <div class="popup-menu" id="popup-menu" style="display: none;">
+            <a href="#">
+                <div class="material-icons md-dark" id="search-icon">person_outline</div>
+                <div class="icon-text" id="icon-text">Account</div>
+            </a>
+            <a href="#">
+                <div class="material-icons md-dark" id="search-icon">people_alt</div>
+                <div class="icon-text" id="icon-text">Connections</div>
+            </a>
+            <a href="#">
+                <div class="material-icons md-dark" id="search-icon">headphones</div>
+                <div class="icon-text" id="icon-text">Music</div>
+            </a>
+            <a href="#">
+                <div class="material-icons md-dark" id="search-icon">settings</div>
+                <div class="icon-text" id="icon-text">Settings</div>
+            </a>
+        </div>
+
     <div class="search-form">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
         
@@ -40,5 +61,21 @@
         </form>
         </div>
     </div>
+
+    <script>
+        function myMenu() {
+            let x = document.getElementById("popup-menu");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        // function darkMode() {
+        //    var element = document.body;
+        //    element.classList.toggle("dark-mode");
+        // }
+    </script>
 </body>
 </html>

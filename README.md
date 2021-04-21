@@ -1,2 +1,6 @@
-# google-clone
-A visual copy of the google home page
+# Odin Project Assignment
+# A visual copy of the google home page
+
+#Updates:
+
+* Added popup app menu with JS that auto scales.
