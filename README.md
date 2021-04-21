@@ -4,3 +4,6 @@
 #Updates:
 
 * Added popup app menu with JS that auto scales.
+
+#To Do:
+*Add footer and links.
